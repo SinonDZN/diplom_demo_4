@@ -1,0 +1,339 @@
+p1 {
+
+    margin-top: 135px;
+    margin-left: 634px;
+    position: absolute;
+    color: white;
+    border: 3px solid transparent;
+    width: 470px;
+    text-align: center;
+}
+
+p2 {
+    margin-top: 170px;
+    margin-left: 657px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    /*font-weight: bold;*/
+    font-size: 23px;
+}
+
+p3 {
+    color: black;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+p4 {
+    margin-top: 325px;
+    margin-left: 619px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+}
+
+p5 {
+    margin-top: 75px;
+    margin-left: 919px;
+    margin-bottom: 40px;
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    font-weight: 450;
+}
+
+p6 {
+    margin-top: 120px;
+    margin-left: 944px;
+    position: absolute;
+    color: black;
+    font-size: 21px;
+    font-weight: 550;
+}
+
+p7 {
+    margin-top: 159px;
+    margin-left: 919px;
+    position: absolute;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+p8 {
+    margin-top: 208px;
+    margin-left: 919px;
+    position: absolute;
+    color: black;
+    font-size: 23px;
+    font-weight: 450;
+}
+
+p9 {
+    margin-top: 315px;
+    margin-left: 919px;
+    position: absolute;
+    color: black;
+    font-size: 23px;
+    font-weight: 450;
+}
+
+p10 {
+    margin-top: 445px;
+    margin-left: 124px;
+    position: absolute;
+    color: #232323;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+p11 {
+
+}
+
+p12 {
+    margin-top: 70px;
+    margin-left: 700px;
+    position: absolute;
+    color: white;
+    font-weight: 550;
+    font-size: 40px;
+}
+p14 {
+    margin-bottom: 90px;
+    margin-left: 800px;
+    position: static;
+    color: black;
+    font-weight: 550;
+    font-size: 30px;
+}
+
+h2{
+    color: black;
+    font-size: 40px;
+}
+
+.text1 {
+    margin-right: 624px;
+}
+
+.col {
+    margin: 45px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 5, 0.07);
+    transition: all .3s;
+}
+
+.col:hover {
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+    -webkit-transform: scale(1.075);
+    -ms-transform: scale(1.075);
+    transform: scale(1.075);
+}
+
+.picture {
+    position: absolute;
+    margin-left: 919px;
+    margin-top: 120px;
+}
+
+.promo {
+    position: relative;
+    margin-left: 500px;
+    margin-top: 80px;
+}
+
+.btn_color {
+    position: absolute;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 5, 0.07);
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.btn2 {
+    position: absolute;
+    margin-left: 1049px;
+    margin-top: 252px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 5, 0.07);
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.btn3 {
+    position: absolute;
+    margin-left: 1185px;
+    margin-top: 252px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 5, 0.07);
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.btn4 {
+    position: absolute;
+    margin-left: 1284px;
+    margin-top: 252px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 5, 0.07);
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.btn5 {
+    position: absolute;
+    margin-left: 919px;
+    margin-top: 359px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 5, 0.07);
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.btn6 {
+    position: absolute;
+    margin-left: 992px;
+    margin-top: 359px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 5, 0.07);
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.btn7 {
+    position: absolute;
+    margin-left: 1112px;
+    margin-top: 359px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 5, 0.07);
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.btn8 {
+    position: relative;
+    margin-left: 1112px;
+    margin-top: 9px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 5, 0.07);
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.btn10 {
+    position: relative;
+    margin-left: 1112px;
+    margin-top: 9px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 5, 0.07);
+    transition: all .3s;
+    text-decoration: none;
+}
+
+.btn1:hover {
+    -webkit-transform: scale(1.075);
+    -ms-transform: scale(1.075);
+    transform: scale(1.075);
+}
+
+.btn2:hover {
+    -webkit-transform: scale(1.075);
+    -ms-transform: scale(1.075);
+    transform: scale(1.075);
+}
+
+.btn3:hover {
+    -webkit-transform: scale(1.075);
+    -ms-transform: scale(1.075);
+    transform: scale(1.075);
+}
+
+.btn4:hover {
+    -webkit-transform: scale(1.075);
+    -ms-transform: scale(1.075);
+    transform: scale(1.075);
+}
+
+.btn5:hover {
+    -webkit-transform: scale(1.075);
+    -ms-transform: scale(1.075);
+    transform: scale(1.075);
+}
+
+.btn6:hover {
+    -webkit-transform: scale(1.075);
+    -ms-transform: scale(1.075);
+    transform: scale(1.075);
+}
+
+.btn7:hover {
+    -webkit-transform: scale(1.075);
+    -ms-transform: scale(1.075);
+    transform: scale(1.075);
+}
+
+/*body {
+  background: url(https://html5book.ru/wp-content/uploads/2015/07/background39.png);
+}
+.gradient-button {
+    width: 600px;
+    height: 50px;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 920px;
+    margin-top: 12px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #fffe61 0%, #f85db1 51%, #fffe61 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+    text-align: center;
+}
+
+.gradient-button:hover {
+    background-position: right center;
+}
+*/
+body {
+    background: #ffbfbe;
+}
+
+.shine-button {
+    width: 400px;
+    height: 43px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #ffc107;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    transition: .2s ease-in-out;
+    text-align: center;
+    background: #ffc107;
+    padding-top: 7px;
+}
+
+.shine-button:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -8px;
+    left: -75px;
+    transform: skewX(-45deg);
+}
+
+.shine-button:hover {
+    background: #e6ad02;
+    color: #fff;
+}
+
+.shine-button:hover:before {
+    left: 350px;
+    transition: .5s ease-in-out;
+}
+@media only screen and (max-width: 480px) {
+    .site {display: none;}
+}

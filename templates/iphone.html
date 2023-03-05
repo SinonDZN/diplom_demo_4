@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Главная
+
+{% endblock %}
+
+{% block body %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/adaptive.css') }}">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                {#        <h1>MacBook Pro</h1>#}
+                {#        <p2>На новейших чипах M2 Pro и M2 Max</p2>#}
+                <a href="/goods/mac_16silver"> <img src="{{ url_for('static', filename='img/222v2.png') }}" class="d-block w-100" alt="..."></a>
+            </div>
+            <div class="carousel-item">
+                {#        <p3>AirPods Pro</p3>#}
+                {#        <p4>2-ое поколение</p4>#}
+                <a href="/goods/airpods_pro_v2"><img src="{{ url_for('static', filename='img/333v2.png') }}" class="d-block w-100" alt="..."></a>
+            </div>
+            <div class="carousel-item">
+
+                {#        <p12>iPhone 14 Pro Max</p12>#}
+                {#        <p1>Волшебный способ взаимодействия с вашим iPhone. Революционные функции безопасности, разработанные для спасения жизней. Инновационная основная камера 48 Мп. И дисплей, который до 2 раз ярче на солнце.</p1>#}
+                <a href="/goods/iphone14promax_purple"><img src="{{ url_for('static', filename='img/111v3.png') }}" class="d-block w-100"
+                                  alt="..."></a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <br>
+    <br>
+    {#<a href="/iphone14promax"><img src="{{ url_for('static', filename='img/iphone.png') }}"></a>#}
+    <div class="row row-cols-1 row-cols-md-6 g-1" style="margin-left: 165px;">
+        {% for el in data %}
+            <div class="col">
+                <div class="card h-100 d-flex align-items-stretch "
+                     style="position: relative; padding-bottom:1px; height: 10px;">
+                    <a href="/goods/{{ el.shortname }}"> <img src="{{ url_for('static', filename=el.image) }}"
+                                                              class="card-img-top" alt="..."></a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{ el.name }}</h5>
+                        <br>
+                        <p class="card-text text-center">{{ el.info }}</p>
+                        <h4 class="card-text text-center">{{ el.price }} ₽</h4>
+                        <a href="/goods/{{ el.shortname }}" class="btn btn-warning center-block"
+                           style="margin-bottom: 10px;">Купить</a>
+                        <div class="d-grid gap-2"
+                             style="position: absolute; bottom: 0; padding-bottom:1px; margin-left: 25%; display: block;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        {% endfor %}
+    </div>
+{% endblock %}

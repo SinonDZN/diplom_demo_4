@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content=<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<header class="site-header sticky-top py-0">
+    <nav class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2 d-none d-md-inline-block" style="text-decoration: none;">улица Кропоткина, 21/1</a>
+        <a class="py-2 d-none d-md-inline-block" style="text-decoration: none;">9:00 - 22:00, без выходных</a>
+        <a class="py-2 d-none d-md-inline-block" style="text-decoration: none;">+79994352124</a>
+    </nav>
+</header>
+<header class="d-flex justify-content-center py-3">
+    <nav class="container d-flex flex-column flex-md-row justify-content-between">
+        <a class="py-2" href="/" aria-label="Главная">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                 stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img"
+                 viewBox="0 0 24 24"><title>Главная</title>
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
+            </svg>
+        </a>
+        <a class="py-2 d-none d-md-inline-block text-dark font-weight-bold"
+           style="text-decoration: none; font-size: 107%;" href="/"><b>Главная</b></a>
+        <a class="py-2 d-none d-md-inline-block text-dark" style="text-decoration: none; font-size: 107%;"
+           href="/katalog"><strong>Каталог</strong></a>
+        <a class="py-2 d-none d-md-inline-block text-dark" style="text-decoration: none; font-size: 107%;" href="/info"><strong>Про
+            нас</strong></a>
+        <a class="py-2 d-none d-md-inline-block text-dark" style="text-decoration: none; font-size: 107%;" href="/cart"><strong>Корзина</strong></a>
+        <a class="py-2 d-none d-md-inline-block text-dark" style="text-decoration: none; font-size: 107%;"
+           href="/create"><strong>Добавить товар</strong></a>
+    </nav>
+</header>
+
+{% block body %}
+{% endblock %}
+
+<footer class="container py-5">
+    <div class="row">
+        <div class="col-12 col-md">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                 stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
+                 viewBox="0 0 24 24"><title>Главная</title>
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path>
+            </svg>
+            <small class="d-block mb-3 text-muted">© 2022-2023</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Магазин</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="/info">Про нас</a></li>
+                <li><a class="link-secondary" href="/katalog">Каталог товаров</a></li>
+                <li><a class="link-secondary" href="/">Вернуться на главную</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Контакты</h5>
+            <ul class="list-unstyled text-small">
+                <li><a>Телефон: +79994352124</a></li>
+                <li><a>Адрес: улица Кропоткина, 21/1</a></li>
+                <li><a>Время работы: 9:00 - 22:00, без выходных</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

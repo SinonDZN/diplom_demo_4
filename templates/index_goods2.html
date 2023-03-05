@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ dats.name }}
+{% endblock %}
+
+{% block body %}
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/adaptive.css') }}">
+    <main>
+        <div class="container">
+            <div class="d-md-flex w-10 my-md-3 ps-md-3">
+                {#                <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">#}
+                <div class="my-3 py-3">
+                    <img src="{{ url_for('static', filename=dats.image) }}"
+                         style="width: 450px; height: 450px;">{# picture #}
+                </div>
+                {#                <div class="shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>#}
+                {#                </div>#}
+                <div class=" text-left overflow-hidden">
+                    <div class="my-3 p-3">
+                        <h2 class="text-left">{{ dats.name }}</h2>
+                        <p3 class="text-left">Официальная гарантия Apple на 1 год.</p3>
+                        <p class="text-left" style="margin-bottom: 15px">Доступно в рассрочку. Доступно в trade-in.</p>
+                        <br>
+                        {% if other_goods|length > 1 %}
+                            <h3 class="display-8">Другие цвета</h3>
+                            {% for el in other_goods %}
+                                {% if el.shortname != dats.shortname %}
+                                    <a href="/goods/{{ el.kind }}/{{ el.shortname }}/"
+                                       class="btn btn-outline-warning">{{ el.color }}</a>
+                                {% endif %}
+                            {% endfor %}
+                        {% endif %}
+                        <br>
+                        <br>
+                        <br>
+                        <p class="text-left" style="margin-bottom: 15px">{{ dats.info }}.</p>
+                        <h3 class="display-8">{{ dats.price }} ₽</h3>
+                        <br>
+                        <a class="shine-button">Добавить в корзину</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container after-good">
+            {% if 'iphones' == dats.kind %}
+                <img src="{{ url_for('static', filename= '/img/promo_iphone.png') }}">
+            {% elif 'macbooks' == dats.kind %}
+                <img src="{{ url_for('static', filename= '/img/for_mac/1.jpg') }}">
+                <img src="{{ url_for('static', filename= '/img/for_mac/2.jpg') }}">
+            {% elif 'airpods' == dats.kind %}
+                <img src="{{ url_for('static', filename= '/img/for_airpods/1.jpeg') }}">
+            {% endif %}
+        </div>
+    </main>
+
+{% endblock %}

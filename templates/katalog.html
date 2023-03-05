@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Каталог
+{% endblock %}
+
+{% block body %}
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/adaptive.css') }}">
+    <br>
+    <div class="row row-cols-1 row-cols-md-6 g-1" style="margin-left: 165px;">
+            <div class="col">
+                <div class="card h-100 d-flex align-items-stretch "
+                     style="position: relative; padding-bottom:1px; height: 10px;">
+                    <div class="card-body text-center">
+                        <br>
+                        <h5 class="card-title">iPhone</h5>
+                        <br>
+                        <a href="/goods/iphones/"><img src="{{ url_for('static', filename='img/goods/iphone_14_purple.jpg') }}" class="card-img-top" alt="..."></a>
+                        <p class="card-text text-center"></p>
+                        <h4 class="card-text text-center"></h4>
+                        <a href="/goods/iphones/" class="btn btn-warning center-block"
+                           style="margin-bottom: 10px;">Посмотреть</a>
+                        <div class="d-grid gap-2"
+                             style="position: absolute; bottom: 0; padding-bottom:1px; margin-left: 25%; display: block;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="col">
+                <div class="card h-100 d-flex align-items-stretch "
+                     style="position: relative; padding-bottom:1px; height: 10px;">
+                    <div class="card-body text-center">
+                        <br>
+                        <h5 class="card-title">MacBook</h5>
+                        <br>
+                        <a href="/goods/macbooks/"><img src="{{ url_for('static', filename='img/goods/macpro16.jpg') }}" class="card-img-top" alt="..."></a>
+                        <p class="card-text text-center"></p>
+                        <h4 class="card-text text-center"></h4>
+                        <a href="/goods/macbooks/" class="btn btn-warning center-block"
+                           style="margin-bottom: 10px;">Посмотреть</a>
+                        <div class="d-grid gap-2"
+                             style="position: absolute; bottom: 0; padding-bottom:1px; margin-left: 25%; display: block;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <div class="col">
+                <div class="card h-100 d-flex align-items-stretch "
+                     style="position: relative; padding-bottom:1px; height: 10px;">
+                    <div class="card-body text-center">
+                        <br>
+                        <h5 class="card-title">AirPods</h5>
+                        <br>
+                        <a href="/goods/airpods/"><img src="{{ url_for('static', filename='img/goods/airpods_pro.png') }}" class="card-img-top" alt="..."></a>
+                        <p class="card-text text-center"></p>
+                        <h4 class="card-text text-center"></h4>
+                        <a href="/goods/airpods/" class="btn btn-warning center-block"
+                           style="margin-bottom: 10px;">Посмотреть</a>
+                        <div class="d-grid gap-2"
+                             style="position: absolute; bottom: 0; padding-bottom:1px; margin-left: 25%; display: block;">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+{% endblock %}

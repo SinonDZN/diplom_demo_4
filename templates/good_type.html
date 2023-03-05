@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    lololoshka
+{% endblock %}
+
+{% block body %}
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/adaptive.css') }}">
+
+    <main>
+    <div class="row row-cols-1 row-cols-md-6 g-1" style="margin-left: 170px;">
+        {% for el in data %}
+            <div class="col">
+                <div class="card h-100 d-flex align-items-stretch"
+                     style="position: relative; padding-bottom:1px; height: 10px;">
+                    <a href="/goods/{{ el.kind }}/{{ el.shortname }}/"> <img src="{{ url_for('static', filename=el.image) }}"
+                                                              class="card-img-top" alt="..."></a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">{{ el.name }}</h5>
+                        <br>
+                        <p class="card-text text-center">{{ el.info }}</p>
+                        <h4 class="card-text text-center">{{ el.price }} ₽</h4>
+                        <a href="/goods/{{ el.kind }}/{{ el.shortname }}/" class="btn btn-warning center-block"
+                           style="margin-bottom: 10px;">Купить</a>
+                        <div class="d-grid gap-2"
+                             style="position: absolute; bottom: 0; padding-bottom:1px; margin-left: 25%; display: block;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        {% endfor %}
+    </div>
+    </main>
+
+{% endblock %}
